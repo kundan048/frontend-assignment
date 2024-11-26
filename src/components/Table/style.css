@@ -1,0 +1,83 @@
+.table-wrapper {
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 1px solid var(--text-color);
+}
+
+tbody td {
+    padding: 12px;
+    border: 1px solid var(--text-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--even-td);
+}
+
+tbody tr:hover {
+    background-color: var(--hover-color);
+    cursor: move;
+}
+
+.pagination {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 0;
+}
+
+.pagination button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.pagination button:disabled {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    cursor: not-allowed;
+}
+
+.pagination-numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination-numbers button {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-numbers button.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    outline: none;
+}
+
+.pagination-numbers button:hover:not(.active) {
+    background-color: var(--hover-color);
+    outline: none;
+}
+
+.ellipsis {
+    padding: 8px 12px;
+    color: var(--text-color);
+    font-size: 14px;
+}
